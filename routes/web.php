@@ -10,10 +10,17 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
-Route::get('/', function () {
-    return view('main.index');
-});
+Route::get('auth/begin', 'Auth\LoginController@showLoginForm');
+Route::post('auth/begin', 'Auth\LoginController@login');
 Route::get('/login', function () {
-    return view('login.login');
+      return view('auth.login');
+});
+Route::get('/home', function () {
+      return view('auth.login');
+});
+Route::group(['middleware' => 'auth'], function()
+{
+  Route::get('/', function () {
+      return view('main.index');
+  });
 });

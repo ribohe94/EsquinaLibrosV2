@@ -11,13 +11,14 @@
                       <a class="pageapp-login-logo" href="#"></a>
                       <div class="pageapp-login-field">
                           <i class="fa fa-user"></i>
-                          <input type="text" value="Username" onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'">
+                          <input type="text" type="email" name="email" id="email" value="email" onfocus="if (this.value=='email') this.value = ''" onblur="if (this.value=='') this.value = 'Email'">
                       </div>
                       <div class="pageapp-login-field">
                           <i class="fa fa-lock"></i>
-                          <input type="password" value="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
+                          <input type="password" name="password" id="password" value="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
                       </div>
-                      <button type="submit" class="pageapp-login-button button button-small button-green button-fullscreen">- Login -</button>
+
+                      <button type="submit" class="pageapp-login-button button button-small button-green button-fullscreen">Login</button>
                       <div class="decoration"></div>
                       <a href="#" class="facebook-login facebook-color"><i class="fa fa-facebook"></i>Login with Facebook</a>
                       <a href="#" class="twitter-login twitter-color no-bottom"><i class="fa fa-twitter"></i>Signin with Twitter</a>
