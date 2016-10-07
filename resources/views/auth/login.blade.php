@@ -20,8 +20,7 @@
 
                       <button type="submit" class="pageapp-login-button button button-small button-green button-fullscreen">Login</button>
                       <div class="decoration"></div>
-                      <a href="#" class="facebook-login facebook-color"><i class="fa fa-facebook"></i>Login with Facebook</a>
-                      <a href="#" class="twitter-login twitter-color no-bottom"><i class="fa fa-twitter"></i>Signin with Twitter</a>
+                      <a href="/signup" class="pageapp-login-button button button-small button-blue button-fullscreen">Sign Up</a>
                     </form>
                   </div>
               </div>
@@ -34,11 +33,6 @@
       </div>
 
   <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
-
-
-
 <!--Fly up share box and notifications go here -->
 <!--These are the only features that should be placed outside the all-elements class-->
-
-
 @stop

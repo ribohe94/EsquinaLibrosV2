@@ -24,3 +24,8 @@ Route::group(['middleware' => 'auth'], function()
       return view('main.index');
   });
 });
+
+
+  Route::get('/signup', function () {
+      return view('auth.register');
+  });
