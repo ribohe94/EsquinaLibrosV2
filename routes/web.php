@@ -20,12 +20,11 @@ Route::get('/home', function () {
 });
 Route::group(['middleware' => 'auth'], function()
 {
-  Route::get('/', function () {
+  /*Route::get('/', function () {
       return view('main.index');
-  });
+  });*/
+  Route::get('/','LibrosController@getindex');
 });
-
-
   Route::get('/signup', function () {
       return view('auth.register');
   });
