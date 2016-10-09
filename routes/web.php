@@ -26,7 +26,7 @@ Route::group(['middleware' => 'auth'], function()
   });*/
 
   //Route to logout
-  Route::get('auth/logout','Auth\LoginController@logout');
+  Route::get('auth/logout','LoginController@logout');
 
   // Route to site to see books in database
   Route::get('/','LibrosController@getIndex');
