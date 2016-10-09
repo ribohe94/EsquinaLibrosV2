@@ -6,7 +6,7 @@
           <div class="pageapp-login bg-5 cover-screen">
               <div class="pageapp-login-content cover-center">
                   <div class="unboxed-layout">
-                    <form method="POST" action="auth/begin">
+                    <form method="POST" action="/auth/begin">
                       {!! csrf_field() !!}
                       <a class="pageapp-login-logo" href="#"></a>
                       <div class="pageapp-login-field">
@@ -17,6 +17,10 @@
                           <i class="fa fa-lock"></i>
                           <input type="password" name="password" id="password" value="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
                       </div>
+                      <div class="pageapp-login-field">
+                        <input  class="fa fa-lock" type="checkbox" name="remember" id="remember">
+
+                        </div>
 
                       <button type="submit" class="pageapp-login-button button button-small button-green button-fullscreen">Login</button>
                       <div class="decoration"></div>
