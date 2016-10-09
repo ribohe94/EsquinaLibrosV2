@@ -24,6 +24,9 @@ Route::group(['middleware' => 'auth'], function()
       return view('main.index');
   });*/
   Route::get('/','LibrosController@getIndex');
+
+  //Salir de sesión
+  Route::get('/logout', 'Auth\LoginController@logOut');
 });
   Route::get('/signup', function () {
       return view('auth.register');

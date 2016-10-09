@@ -11,5 +11,4 @@ class LibrosController extends Controller
   public function getIndex(){
     return view('libro.index');
   }
-    //ale loca
 }
