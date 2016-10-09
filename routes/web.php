@@ -15,6 +15,7 @@ Route::post('auth/begin', 'Auth\LoginController@login');
 Route::get('/login', function () {
       return view('auth.login');
 });
+
 Route::get('/home', function () {
       return view('auth.login');
 });
@@ -23,8 +24,17 @@ Route::group(['middleware' => 'auth'], function()
   /*Route::get('/', function () {
       return view('main.index');
   });*/
-  Route::get('/','LibrosController@getindex');
+
+  //Route to logout
+  Route::get('auth/logout','Auth\LoginController@logout');
+
+  // Route to site to see books in database
+  Route::get('/','LibrosController@getIndex');
+
 });
+
+
+
   Route::get('/signup', function () {
       return view('auth.register');
   });

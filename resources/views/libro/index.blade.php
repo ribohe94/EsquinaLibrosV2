@@ -77,8 +77,4 @@
 
 <!--Fly up share box and notifications go here -->
 <!--These are the only features that should be placed outside the all-elements class-->
-
-
-
-
 @stop
