@@ -21,36 +21,18 @@
                 <div class="portfolio-filter">
                     <div class="portfolio-filter-categories">
                         <a href="#" class="filter-category selected-filter" data-rel="all-cat">All</a>
-                        <a href="#" class="filter-category" data-rel="cat1">Websites</a>
-                        <a href="#" class="filter-category" data-rel="cat2">Flyers</a>
-                        <a href="#" class="filter-category" data-rel="cat3">Business</a>
+                        @foreach($categorias as $key=>$categorias)
+                        <!--<a href="#" class="filter-category selected-filter" data-rel="all-cat">All</a>-->
+                        <a href="#" class="filter-category" data-rel="{{$categorias->categId}}">{{$categorias->categName}}</a>
+                        @endforeach
                     </div>
                     <div class="clear"></div>
                     <div class="portfolio-filter-wrapper">
-                        <div class="cat1 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/1.jpg" class="responsive-image" alt="img"></a>
-                        </div>
-                        <div class="cat2 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/2.jpg" class="responsive-image" alt="img"></a>
-                        </div>
-                        <div class="cat3 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/3.jpg" class="responsive-image" alt="img"></a>
-                        </div>
-                        <div class="cat1 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/4.jpg" class="responsive-image" alt="img"></a>
-                        </div>
-                        <div class="cat2 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/5.jpg" class="responsive-image" alt="img"></a>
-                        </div>
-                        <div class="cat3 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/6.jpg" class="responsive-image" alt="img"></a>
-                        </div>
-                        <div class="cat1 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/7.jpg" class="responsive-image" alt="img"></a>
-                        </div>
-                        <div class="cat2 all-cat portfolio-filter-item">
-                            <a class="show-gallery-1" href="#"><img src="images/pictures/8.jpg" class="responsive-image" alt="img"></a>
-                        </div>
+                      @foreach($libros as $key=>$libros)
+                      <div class="{{$libros->libCategoria}} all-cat portfolio-filter-item">
+                          <a class="show-gallery-1" href="#"><img src="{{$libros->libImage}}" height="150" width="150" alt="{{$libros->libNombre}}"></a>
+                      </div>
+                      @endforeach
                     </div>
                 </div>
 
@@ -77,4 +59,8 @@
 
 <!--Fly up share box and notifications go here -->
 <!--These are the only features that should be placed outside the all-elements class-->
+
+
+
+
 @stop

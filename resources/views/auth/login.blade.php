@@ -17,11 +17,7 @@
                           <i class="fa fa-lock"></i>
                           <input type="password" name="password" id="password" value="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
                       </div>
-                      <div class="pageapp-login-field">
-                        <input  class="fa fa-lock" type="checkbox" name="remember" id="remember">
-
-                        </div>
-
+                        <input  class="fa fa-lock" type="checkbox" name="remember" id="remember" checked>
                       <button type="submit" class="pageapp-login-button button button-small button-green button-fullscreen">Login</button>
                       <div class="decoration"></div>
                       <a href="/signup" class="pageapp-login-button button button-small button-blue button-fullscreen">Sign Up</a>
