@@ -19,22 +19,7 @@
                 <!--Static Columns-->
 
                 <div class="portfolio-filter">
-                    <div class="portfolio-filter-categories">
-                        <a href="" class="filter-category selected-filter" data-rel="all-cat">All</a>
-                        @foreach($categorias as $key=>$categorias)
-                        <!--<a href="#" class="filter-category selected-filter" data-rel="all-cat">All</a>-->
-                        <a href="#" class="filter-category" data-rel="{{$categorias->categId}}">{{$categorias->categName}}</a>
-                        @endforeach
-                    </div>
-                    <div class="clear"></div>
-                    <div class="portfolio-filter-wrapper">
-                      @foreach($libros as $key=>$libros)
-                      <div class="{{$libros->libCategoria}} all-cat portfolio-filter-item">
-                          <a class="show-gallery-1" href="compra/{{$libros->idLibro}}"><img src="{{$libros->libImage}}" height="150" width="150" alt="{{$libros->libNombre}}"></a>
-                          <a href="compra/{{$libros->idLibro}}">Ir</a>
-                      </div>
-                      @endforeach
-                    </div>
+                  <img alt="{{$libro->libNombre}}"></img>
                 </div>
 
                 <div class="decoration"></div>
@@ -56,12 +41,4 @@
     </div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
 </div>
-
-
-<!--Fly up share box and notifications go here -->
-<!--These are the only features that should be placed outside the all-elements class-->
-
-
-
-
 @stop

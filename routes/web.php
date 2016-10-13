@@ -24,6 +24,13 @@ Route::group(['middleware' => 'auth'], function()
       return view('main.index');
   });*/
   Route::get('/','LibrosController@getindex');
+
+
+
+  Route::get('compra/{idLibro}','LibrosController@getCompra');
+
+
+
   Route::get('auth/logout', 'Auth\LoginController@logout');
   Route::post('auth/logout', 'Auth\LoginController@logout');
 });
