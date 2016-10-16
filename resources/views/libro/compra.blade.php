@@ -19,7 +19,7 @@
                 <!--Static Columns-->
 
                 <div class="portfolio-filter">
-                  <img alt="{{$libro->libNombre}}"></img>
+                  <img src="{{$libro->libImage}}" height="150" width="150" alt="{{$libro->libNombre}}"></img>
                 </div>
 
                 <div class="decoration"></div>
