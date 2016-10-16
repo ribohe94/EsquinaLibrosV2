@@ -19,8 +19,15 @@
                 <!--Static Columns-->
 
                 <div class="portfolio-filter">
-                  <img src="{{$libro->libImage}}" height="150" width="150" alt="{{$libro->libNombre}}"></img>
+                <div style="float:left">
+                  <img src="{{$libro->libImage}}" height="150" width="150" alt="{{$libro->libNombre}}" align="middle"></img>
                 </div>
+                  <div style="float:right;background:green;margin-left: 10px;" >
+                    <h1>{{$libro->libNombre}}</h1>
+                    <p1>Descripción: {{$libro->libDescripcion}}</p1>
+                  </div>
+                </div>
+
 
                 <div class="decoration"></div>
 
